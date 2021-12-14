@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="@dimen/_20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/Black"
+        android:padding="@dimen/_8dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <com.android.utils.CustomTvLight
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5dp"
+        android:text="oxygen"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sp" />
+
+    <com.android.utils.CustomTvLight
+        android:id="@+id/minAlertTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5dp"
+        android:text="10.0f"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sp" />
+    <com.android.utils.CustomTvLight
+        android:id="@+id/maxAlertTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5dp"
+        android:text="20f"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sp" />
+    <com.android.utils.CustomTvLight
+        android:id="@+id/gasScaleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5dp"
+        android:text="20f"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.android.utils.CustomTvLight
+            android:id="@+id/distanceTV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:text="10.0f"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/warningIv"
+            android:visibility="gone"
+            android:src="@mipmap/warning"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

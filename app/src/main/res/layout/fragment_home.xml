@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.HomeFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sessionCV"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/RoyalBlue"
+            app:cardCornerRadius="@dimen/_5dp"
+            app:contentPadding="@dimen/_10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+<!--                <View-->
+<!--                    android:layout_width="@dimen/_20dp"-->
+<!--                    android:layout_height="@dimen/_20dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:background="@mipmap/ic_launcher" />-->
+
+                <com.android.utils.CustomBoldTV
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create session"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_16sp" />
+
+<!--                <com.android.utils.CustomTvLight-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_10dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Setup a public or private session"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    android:textSize="@dimen/_14sp" />-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

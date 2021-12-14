@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_12dp"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/gasTypeSp"
+        android:layout_width="match_parent"
+        style="@style/spinner_style"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:background="@color/LightGrey" />
+
+    <Spinner
+        android:id="@+id/percentageSp"
+        android:layout_width="match_parent"
+        style="@style/spinner_style"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+       android:layout_marginStart="@dimen/_5dp"
+        android:background="@color/LightGrey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_4dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_16dp">
+
+        <com.android.utils.CustomTvMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:text="Min Alert"
+            android:textColor="@color/Black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:id="@+id/maDecrementIv"
+            android:src="@drawable/minus"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="45dp"
+            app:strokeColor="@color/Black"
+            app:strokeWidth="0.8dp"
+            app:cardCornerRadius="@dimen/_4dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_marginHorizontal="@dimen/_15dp">
+
+            <com.android.utils.CustomTvMedium
+                android:id="@+id/maTextCountTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="0.0 ft"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_12dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/maIncrementIv"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:src="@drawable/plus"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_4dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_15dp">
+
+        <com.android.utils.CustomTvMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Alert Value"
+            android:textColor="@color/Black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:id="@+id/alDecrementIv"
+            android:src="@drawable/minus"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="45dp"
+            app:strokeColor="@color/Black"
+            app:strokeWidth="0.8dp"
+            app:cardCornerRadius="@dimen/_4dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_marginHorizontal="@dimen/_15dp">
+
+            <com.android.utils.CustomTvMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0.0 ft"
+                android:id="@+id/alTextCountTv"
+                android:textSize="@dimen/_12dp"
+                android:gravity="center"
+                android:textColor="@color/Black" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:id="@+id/alIncrementIv"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:src="@drawable/plus"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        style="@style/LoginButtonBlueRoundedStroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="Save"
+        android:textSize="@dimen/_14sp" />
+
+
+</LinearLayout>
